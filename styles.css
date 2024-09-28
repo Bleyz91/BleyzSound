@@ -1,0 +1,104 @@
+/* styles.css */
+
+/* Général */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a; /* Fond noir */
+  color: #f5f5f5; /* Texte en blanc */
+  line-height: 1.6;
+  padding: 20px; /* Padding général */
+  text-align: center; /* Centrer tout le texte */
+  background-image: 
+    linear-gradient(135deg, transparent 25%, #ffcc00 25%, #ffcc00 50%, transparent 50%, transparent 75%, #ffcc00 75%, #ffcc00);
+  background-size: 480px 480px; /* Taille des rayures (480px) */
+}
+
+.product {
+  background-color: rgba(51, 51, 51, 0.9); /* Fond gris foncé transparent */
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  margin: 40px auto; /* Centrer le produit */
+}
+
+img {
+  max-width: 90%; /* Légèrement réduire la largeur maximale */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 30px; /* Augmenter la marge inférieure */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product h2 {
+  font-size: 2.5rem; /* Augmenter la taille du titre */
+  margin-bottom: 30px; /* Augmenter la marge inférieure */
+  color: #ffcc00; /* Jaune */
+}
+
+.product p {
+  font-size: 1.3rem; /* Augmenter la taille du texte */
+  margin-bottom: 30px; /* Augmenter la marge inférieure */
+  color: #fff; /* Texte blanc */
+}
+
+ul {
+  list-style-type: none;
+  margin: 30px 0; /* Augmenter la marge verticale */
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem; /* Augmenter la taille du texte */
+  margin: 15px 0; /* Augmenter la marge */
+  color: #ffcc00; /* Jaune */
+}
+
+button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 20px 40px; /* Augmenter le padding */
+  border: none;
+  font-size: 1.4rem; /* Augmenter la taille du texte */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px; /* Augmenter la marge supérieure */
+  font-size: 1rem; /* Augmenter la taille du texte */
+  color: #7f8c8d;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .product {
+    padding: 30px; /* Ajuster le padding pour les petits écrans */
+  }
+
+  h2 {
+    font-size: 2rem; /* Ajuster la taille du titre */
+  }
+
+  p {
+    font-size: 1.1rem; /* Ajuster la taille du texte */
+  }
+
+  button {
+    padding: 15px 30px; /* Ajuster le padding */
+    font-size: 1rem; /* Ajuster la taille du texte */
+  }
+}
